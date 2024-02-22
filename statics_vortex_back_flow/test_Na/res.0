@@ -1,0 +1,443 @@
+ Normalitzacio de la impureça...:   1.000000E+00
+ Nombre de partícules...:   1.000000E+03
+
+
+            ######  ####### ####### #       #     #          #####          
+            #     # #          #    #    #  #     #  ###### #     #  #####  
+            #     # #          #    #    #  #     #  #            #  #    # 
+            #     # #####      #    #    #  #######  #####   #####   #    # 
+            #     # #          #    ####### #     #  #            #  #    # 
+            #     # #          #         #  #     #  #      #     #  #    # 
+            ######  #          #         #  #     #  ######  #####   #####  
+
+     Title of the run: 4He_1000 + Na                           
+
+
+     CONTINUE a calculation:
+
+     Input file with helium densitity    : den.inp                                                     
+     Input file with impurity wave func. : denx.inp                                                    
+     Output file with helium densitity   : den.out                                                     
+     Output file with impurity wave func.: denx.out                                                    
+ 
+
+
+     Number of threads:         4
+     Number of iterations:          6000000
+
+
+     Number of particles:            1000
+ 
+
+
+     +-------------------+----------------------------------------+
+     | REAL GRID         |     X-grid       Y-grid       Z-grid   |
+     +-------------------+----------------------------------------+
+     | Number of points  |      192          192          192     |
+     | Step              | 3.64583E-01  3.64583E-01  3.64583E-01  |
+     | Min value         |-3.50000E+01 -3.50000E+01 -3.50000E+01  |
+     | Max value         | 3.46354E+01  3.46354E+01  3.46354E+01  |
+     +-------------------+----------------------------------------+
+
+
+     +-------------------+----------------------------------------+
+     | MOMEMTUM GRID     |    Px-grid      Py-grid      Pz-grid   |
+     +-------------------+----------------------------------------+
+     | Step              | 1.42857E-02  1.42857E-02  1.42857E-02  |
+     | Min value         | 0.00000E+00  0.00000E+00  0.00000E+00  |
+     | Max value         | 1.37143E+00  1.37143E+00  1.37143E+00  |
+     +-------------------+----------------------------------------+
+
+     Maximum modulus of p    2.375384      2.375384
+ 
+
+
+     Parameters for the funcional:
+
+       cp4 ......  -2.41186E+04 K \AA**6
+       cpp4 .....   1.85850E+06 K \AA**9
+       den4c ....         0.062 \AA**{-3}
+       Alphas ...        54.310 K ^-1 \AA**3
+       L ........          1.00 \AA
+       den0s ....          0.04 \AA**-3
+       h2o2m4 ...  6.05969638298 hbar**2 / (2 m_4)
+       h2o2mx ...  1.05501502894 hbar**2 / (2 m_x)
+  
+     Calculation with the impurity: 
+ NA                                                                             
+  
+         Atomic mass     22.990
+  
+     Initial position of the impurity:
+            X_imp =    0.00000 A
+            Y_imp =    0.00000 A
+            Z_imp =   23.66554 A
+  
+
+
+     Pavlov parameter fixed for all the run to:   0.0100
+ We will use the standard OT DF
+     Use Orsay-Trento Interaction.
+     Full Orsay-Trento calculation. (Field and Energy)
+
+     Lennard-Jones parameters:
+
+         Core    OTC
+         h       2.1903230 A
+         eps    10.2200000 K
+         sigma   2.5560000 A
+         b        -718.990 K A**3 
+
+ 
+     Initialize Plans for FFT.
+     Compute the FFT of the kernel of Lennard-Jones integrals.
+    Initialize Coarse-graining kernel, h_cg=   2.190323E+00
+
+
+    FIRST ENERGY BALANCE: 
+
+    TOTAL   energy (He) ..........:       -5330.035902 K
+    Energy per particle (He+X) ...:          -5.341647 K
+    Kinetic energy (He) ..........:         251.022613 K
+    Lennard-Jones energy (He) ....:       -5734.092215 K
+    Alpha_s term  energy (He) ....:         -50.652630 K
+    Solid energy (He)  ...........:           0.000000 K
+    Correlation energy   (He) ....:         220.480314 K
+    Backflow energy...............:    -1.67939847E+01 K
+    <L_z>.........................:           1.000000E+03 \hbar +-   1.0000E+03 \hbar
+    Impurity energy (X-He) .......:         -13.942759 K
+    Kinetic energy (X) ...........:           2.331624 K
+    TOTAL ENERGY (He+X) ..........:       -5341.647037 K
+
+    Impurity location  (x-axix) ..:           0.000000 K
+                       (y-axis) ..:           0.000000 K
+                       (z-axis) ..:          23.665536 K
+
+
+
+ Iter             Mu(K)      Err(Mu)    Autovalue(K)   err(K)   ETtime  / Lap Time
+---------------------------------------------------------------------------------------
+        50  -5.9901567E+00   7.47E-08  -1.1646762E+01   6.04E-05     383./    7.02
+       100  -5.9894976E+00   3.70E-06  -1.1678459E+01   4.90E-05     775./    7.01
+       150  -5.9881539E+00   5.01E-06  -1.1704309E+01   4.00E-05    1137./    7.07
+
+
+    ITERATIVE PROCEDURE 
+
+    Total Energy (He)..........       -5331.083195 K +-  -1.1623E+00 K
+    Energy per particle (He+X).          -5.342809 K
+
+    Kinetic Energy (He)........         255.694623 K
+    Lennard-Jones Energy (He)..       -5740.735762 K
+    Alpha_s term  energy (He)..         -50.545180 K
+    Solid energy (He) .........           0.000000 K
+    Correlation Energy  (He)...         223.282702 K
+    Backflow energy............    -1.87795780E+01 K
+    Chemical Potential ........          -5.986592 K +-  -1.2627E-06K
+    Autovalue (impurity) ......         -11.725511 K +-   2.2988E-02K
+    Impurity energy (X->He) ...         -14.059002 K
+    Kinetic energy (X) ........           2.332909 K
+    TOTAL energy (He+X) .......       -5342.809288 K
+ 
+    Impurity location  (x-axix) ..:           0.000000 K
+                       (y-axis) ..:           0.000000 K
+                       (z-axis) ..:          23.664980 K
+ 
+    <L_z>......................           1.000000E+03 \hbar +-  -7.1314E-06 \hbar
+
+    Center of Mass of the Helium ........(   0.0000,  -0.0000,   0.5172) A
+    Center of Mass of the Impurity ......(   0.0000,   0.0000,  23.6650) A
+    Distances between centers of mass ...(   0.0000,   0.0000,  23.1478) A
+ 
+
+
+ Iter             Mu(K)      Err(Mu)    Autovalue(K)   err(K)   ETtime  / Lap Time
+---------------------------------------------------------------------------------------
+       200  -5.9865920E+00   5.32E-06  -1.1725511E+01   2.30E-02    1513./   10.71
+       250  -5.9850128E+00   5.20E-06  -1.1743016E+01   2.72E-05    1870./    7.05
+       300  -5.9834993E+00   4.91E-06  -1.1757573E+01   2.26E-05    2223./    7.08
+       350  -5.9820820E+00   4.57E-06  -1.1769768E+01   1.90E-05    2641./    8.93
+
+
+    ITERATIVE PROCEDURE 
+
+    Total Energy (He)..........       -5331.174644 K +-  -1.4581E-01 K
+    Energy per particle (He+X).          -5.342955 K
+
+    Kinetic Energy (He)........         257.625654 K
+    Lennard-Jones Energy (He)..       -5744.303775 K
+    Alpha_s term  energy (He)..         -50.505721 K
+    Solid energy (He) .........           0.000000 K
+    Correlation Energy  (He)...         225.548265 K
+    Backflow energy............    -1.95390667E+01 K
+    Chemical Potential ........          -5.980769 K +-  -3.5462E-07K
+    Autovalue (impurity) ......         -11.780058 K +-   2.9888E-02K
+    Impurity energy (X->He) ...         -14.116546 K
+    Kinetic energy (X) ........           2.336096 K
+    TOTAL energy (He+X) .......       -5342.955094 K
+ 
+    Impurity location  (x-axix) ..:           0.000000 K
+                       (y-axis) ..:           0.000000 K
+                       (z-axis) ..:          23.664488 K
+ 
+    <L_z>......................           1.000000E+03 \hbar +-  -1.0585E-06 \hbar
+
+    Center of Mass of the Helium ........(   0.0000,  -0.0000,   0.5167) A
+    Center of Mass of the Impurity ......(   0.0000,   0.0000,  23.6645) A
+    Distances between centers of mass ...(   0.0000,   0.0000,  23.1478) A
+ 
+
+
+ Iter             Mu(K)      Err(Mu)    Autovalue(K)   err(K)   ETtime  / Lap Time
+---------------------------------------------------------------------------------------
+       400  -5.9807686E+00   4.22E-06  -1.1780058E+01   2.99E-02    3087./   13.61
+       450  -5.9795563E+00   3.90E-06  -1.1788799E+01   1.37E-05    3439./    6.98
+       500  -5.9784386E+00   3.59E-06  -1.1796272E+01   1.17E-05    3807./   17.13
+       550  -5.9774077E+00   3.32E-06  -1.1802698E+01   1.01E-05    4163./    7.06
+
+
+    ITERATIVE PROCEDURE 
+
+    Total Energy (He)..........       -5331.169097 K +-  -2.2568E-02 K
+    Energy per particle (He+X).          -5.342978 K
+
+    Kinetic Energy (He)........         258.623041 K
+    Lennard-Jones Energy (He)..       -5746.390849 K
+    Alpha_s term  energy (He)..         -50.507794 K
+    Solid energy (He) .........           0.000000 K
+    Correlation Energy  (He)...         226.986036 K
+    Backflow energy............    -1.98795299E+01 K
+    Chemical Potential ........          -5.976456 K +-  -1.4230E-07K
+    Autovalue (impurity) ......         -11.808253 K +-   3.8189E-02K
+    Impurity energy (X->He) ...         -14.148757 K
+    Kinetic energy (X) ........           2.340192 K
+    TOTAL energy (He+X) .......       -5342.977662 K
+ 
+    Impurity location  (x-axix) ..:           0.000000 K
+                       (y-axis) ..:           0.000000 K
+                       (z-axis) ..:          23.664485 K
+ 
+    <L_z>......................           1.000000E+03 \hbar +-  -4.1347E-08 \hbar
+
+    Center of Mass of the Helium ........(   0.0000,  -0.0000,   0.5162) A
+    Center of Mass of the Impurity ......(   0.0000,   0.0000,  23.6645) A
+    Distances between centers of mass ...(   0.0000,   0.0000,  23.1483) A
+ 
+
+
+ Iter             Mu(K)      Err(Mu)    Autovalue(K)   err(K)   ETtime  / Lap Time
+---------------------------------------------------------------------------------------
+       600  -5.9764558E+00   3.06E-06  -1.1808253E+01   3.82E-02    4517./   10.89
+       650  -5.9755755E+00   2.84E-06  -1.1813077E+01   7.62E-06    4875./    8.91
+       700  -5.9747601E+00   2.63E-06  -1.1817281E+01   6.66E-06    5286./    7.01
+       750  -5.9740036E+00   2.44E-06  -1.1820958E+01   5.83E-06    5650./    6.99
+
+
+    ITERATIVE PROCEDURE 
+
+    Total Energy (He)..........       -5331.152218 K +-   9.8782E-04 K
+    Energy per particle (He+X).          -5.342977 K
+
+    Kinetic Energy (He)........         259.228657 K
+    Lennard-Jones Energy (He)..       -5747.757784 K
+    Alpha_s term  energy (He)..         -50.525788 K
+    Solid energy (He) .........           0.000000 K
+    Correlation Energy  (He)...         227.959554 K
+    Backflow energy............    -2.00568572E+01 K
+    Chemical Potential ........          -5.973301 K +-  -7.0664E-08K
+    Autovalue (impurity) ......         -11.824182 K +-   4.6118E-02K
+    Impurity energy (X->He) ...         -14.168964 K
+    Kinetic energy (X) ........           2.344508 K
+    TOTAL energy (He+X) .......       -5342.976674 K
+ 
+    Impurity location  (x-axix) ..:           0.000000 K
+                       (y-axis) ..:           0.000000 K
+                       (z-axis) ..:          23.664998 K
+ 
+    <L_z>......................           1.000000E+03 \hbar +-   1.2739E-08 \hbar
+
+    Center of Mass of the Helium ........(   0.0000,  -0.0000,   0.5157) A
+    Center of Mass of the Impurity ......(   0.0000,   0.0000,  23.6650) A
+    Distances between centers of mass ...(   0.0000,   0.0000,  23.1493) A
+ 
+
+
+ Iter             Mu(K)      Err(Mu)    Autovalue(K)   err(K)   ETtime  / Lap Time
+---------------------------------------------------------------------------------------
+       800  -5.9733007E+00   2.27E-06  -1.1824182E+01   4.61E-02    6005./   10.65
+       850  -5.9726467E+00   2.11E-06  -1.1827014E+01   4.49E-06    6358./    7.04
+       900  -5.9720374E+00   1.97E-06  -1.1829506E+01   3.95E-06    6709./    7.00
+       950  -5.9714689E+00   1.84E-06  -1.1831700E+01   3.48E-06    7077./    8.87
+
+
+    ITERATIVE PROCEDURE 
+
+    Total Energy (He)..........       -5331.137932 K +-   4.8557E-03 K
+    Energy per particle (He+X).          -5.342972 K
+
+    Kinetic Energy (He)........         259.634024 K
+    Lennard-Jones Energy (He)..       -5748.719196 K
+    Alpha_s term  energy (He)..         -50.548204 K
+    Solid energy (He) .........           0.000000 K
+    Correlation Energy  (He)...         228.655280 K
+    Backflow energy............    -2.01598359E+01 K
+    Chemical Potential ........          -5.970938 K +-  -4.0960E-08K
+    Autovalue (impurity) ......         -11.833631 K +-   5.2608E-02K
+    Impurity energy (X->He) ...         -14.182543 K
+    Kinetic energy (X) ........           2.348657 K
+    TOTAL energy (He+X) .......       -5342.971818 K
+ 
+    Impurity location  (x-axix) ..:           0.000000 K
+                       (y-axis) ..:           0.000000 K
+                       (z-axis) ..:          23.665956 K
+ 
+    <L_z>......................           1.000000E+03 \hbar +-  -4.0877E-09 \hbar
+
+    Center of Mass of the Helium ........(   0.0000,  -0.0000,   0.5152) A
+    Center of Mass of the Impurity ......(   0.0000,   0.0000,  23.6660) A
+    Distances between centers of mass ...(   0.0000,   0.0000,  23.1508) A
+ 
+
+
+ Iter             Mu(K)      Err(Mu)    Autovalue(K)   err(K)   ETtime  / Lap Time
+---------------------------------------------------------------------------------------
+      1000  -5.9709380E+00   1.72E-06  -1.1833631E+01   5.26E-02    7458./   19.14
+      1050  -5.9704416E+00   1.61E-06  -1.1835330E+01   2.69E-06    7817./    7.30
+      1100  -5.9699770E+00   1.51E-06  -1.1836823E+01   2.36E-06    8168./    6.98
+      1150  -5.9695418E+00   1.41E-06  -1.1838132E+01   2.07E-06    8523./    6.98
+
+
+    ITERATIVE PROCEDURE 
+
+    Total Energy (He)..........       -5331.128155 K +-   4.1427E-03 K
+    Energy per particle (He+X).          -5.342968 K
+
+    Kinetic Energy (He)........         259.923216 K
+    Lennard-Jones Energy (He)..       -5749.426876 K
+    Alpha_s term  energy (He)..         -50.570337 K
+    Solid energy (He) .........           0.000000 K
+    Correlation Energy  (He)...         229.170662 K
+    Backflow energy............    -2.02248210E+01 K
+    Chemical Potential ........          -5.969134 K +-  -2.6832E-08K
+    Autovalue (impurity) ......         -11.839276 K +-   5.7670E-02K
+    Impurity energy (X->He) ...         -14.191966 K
+    Kinetic energy (X) ........           2.352446 K
+    TOTAL energy (He+X) .......       -5342.967675 K
+ 
+    Impurity location  (x-axix) ..:          -0.000000 K
+                       (y-axis) ..:           0.000000 K
+                       (z-axis) ..:          23.667272 K
+ 
+    <L_z>......................           1.000000E+03 \hbar +-  -1.5480E-08 \hbar
+
+    Center of Mass of the Helium ........(   0.0000,  -0.0000,   0.5146) A
+    Center of Mass of the Impurity ......(  -0.0000,   0.0000,  23.6673) A
+    Distances between centers of mass ...(   0.0000,   0.0000,  23.1526) A
+ 
+
+
+ Iter             Mu(K)      Err(Mu)    Autovalue(K)   err(K)   ETtime  / Lap Time
+---------------------------------------------------------------------------------------
+      1200  -5.9691338E+00   1.32E-06  -1.1839276E+01   5.77E-02    8889./   10.64
+      1250  -5.9687509E+00   1.24E-06  -1.1840271E+01   1.57E-06    9240./    6.97
+      1300  -5.9683913E+00   1.17E-06  -1.1841132E+01   1.35E-06    9592./    7.00
+      1350  -5.9680534E+00   1.10E-06  -1.1841872E+01   1.16E-06    9942./    7.00
+
+
+    ITERATIVE PROCEDURE 
+
+    Total Energy (He)..........       -5331.122355 K +-   2.5797E-03 K
+    Energy per particle (He+X).          -5.342965 K
+
+    Kinetic Energy (He)........         260.139108 K
+    Lennard-Jones Energy (He)..       -5749.964425 K
+    Alpha_s term  energy (He)..         -50.590414 K
+    Solid energy (He) .........           0.000000 K
+    Correlation Energy  (He)...         229.562025 K
+    Backflow energy............    -2.02686493E+01 K
+    Chemical Potential ........          -5.967736 K +-  -1.9376E-08K
+    Autovalue (impurity) ......         -11.842502 K +-   6.1577E-02K
+    Impurity energy (X->He) ...         -14.198540 K
+    Kinetic energy (X) ........           2.355800 K
+    TOTAL energy (He+X) .......       -5342.965096 K
+ 
+    Impurity location  (x-axix) ..:          -0.000001 K
+                       (y-axis) ..:           0.000000 K
+                       (z-axis) ..:          23.668873 K
+ 
+    <L_z>......................           1.000000E+03 \hbar +-  -2.0970E-08 \hbar
+
+    Center of Mass of the Helium ........(   0.0000,  -0.0000,   0.5141) A
+    Center of Mass of the Impurity ......(  -0.0000,   0.0000,  23.6689) A
+    Distances between centers of mass ...(   0.0000,   0.0000,  23.1547) A
+ 
+
+
+ Iter             Mu(K)      Err(Mu)    Autovalue(K)   err(K)   ETtime  / Lap Time
+---------------------------------------------------------------------------------------
+      1400  -5.9677356E+00   1.03E-06  -1.1842502E+01   6.16E-02   10297./   10.64
+      1450  -5.9674365E+00   9.73E-07  -1.1843032E+01   8.18E-07   10648./    7.09
+      1500  -5.9671550E+00   9.16E-07  -1.1843470E+01   6.69E-07   11009./   15.37
+      1550  -5.9668897E+00   8.64E-07  -1.1843825E+01   5.33E-07   11371./    8.03
+
+
+    ITERATIVE PROCEDURE 
+
+    Total Energy (He)..........       -5331.119628 K +-   1.1315E-03 K
+    Energy per particle (He+X).          -5.342964 K
+
+    Kinetic Energy (He)........         260.305946 K
+    Lennard-Jones Energy (He)..       -5750.382439 K
+    Alpha_s term  energy (He)..         -50.607918 K
+    Solid energy (He) .........           0.000000 K
+    Correlation Energy  (He)...         229.864670 K
+    Backflow energy............    -2.02998867E+01 K
+    Chemical Potential ........          -5.966640 K +-  -1.5085E-08K
+    Autovalue (impurity) ......         -11.844102 K +-   6.4598E-02K
+    Impurity energy (X->He) ...         -14.203045 K
+    Kinetic energy (X) ........           2.358709 K
+    TOTAL energy (He+X) .......       -5342.963964 K
+ 
+    Impurity location  (x-axix) ..:          -0.000001 K
+                       (y-axis) ..:           0.000000 K
+                       (z-axis) ..:          23.670696 K
+ 
+    <L_z>......................           1.000000E+03 \hbar +-  -2.3604E-08 \hbar
+
+    Center of Mass of the Helium ........(   0.0000,  -0.0000,   0.5136) A
+    Center of Mass of the Impurity ......(  -0.0000,   0.0000,  23.6707) A
+    Distances between centers of mass ...(   0.0000,   0.0000,  23.1571) A
+ 
+
+
+ Iter             Mu(K)      Err(Mu)    Autovalue(K)   err(K)   ETtime  / Lap Time
+---------------------------------------------------------------------------------------
+      1600  -5.9666397E+00   8.14E-07  -1.1844102E+01   6.46E-02   11738./   10.67
+      1650  -5.9664038E+00   7.68E-07  -1.1844308E+01   2.93E-07   12108./    7.00
+      1700  -5.9661813E+00   7.25E-07  -1.1844449E+01   1.87E-07   12460./    8.33
+      1750  -5.9659712E+00   6.85E-07  -1.1844530E+01   8.90E-08   12821./    7.02
+
+
+    ITERATIVE PROCEDURE 
+
+    Total Energy (He)..........       -5331.119177 K +-  -2.5251E-08 K
+    Energy per particle (He+X).          -5.342964 K
+
+    Kinetic Energy (He)........         260.438483 K
+    Lennard-Jones Energy (He)..       -5750.713619 K
+    Alpha_s term  energy (He)..         -50.622864 K
+    Solid energy (He) .........           0.000000 K
+    Correlation Energy  (He)...         230.102045 K
+    Backflow energy............    -2.03232237E+01 K
+    Chemical Potential ........          -5.965773 K +-  -1.2419E-08K
+    Autovalue (impurity) ......         -11.844555 K +-   6.6943E-02K
+    Impurity energy (X->He) ...         -14.205982 K
+    Kinetic energy (X) ........           2.361195 K
+    TOTAL energy (He+X) .......       -5342.963964 K
+ 
+    Impurity location  (x-axix) ..:          -0.000001 K
+                       (y-axis) ..:           0.000000 K
+                       (z-axis) ..:          23.672694 K
+ 
+    <L_z>......................           1.000000E+03 \hbar +-  -2.5332E-08 \hbar
+  Total     13184.01    
